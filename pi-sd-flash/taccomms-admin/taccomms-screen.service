@@ -1,0 +1,40 @@
+[Unit]
+Description=TacComms secure touchscreen
+After=taccomms-admin.service systemd-user-sessions.service console-setup.service
+Wants=taccomms-admin.service
+Conflicts=halow-console.service getty@tty1.service
+
+[Service]
+Type=simple
+User=taccomms
+Group=taccomms
+SupplementaryGroups=video input i2c gpio tty systemd-journal
+ExecStartPre=+/usr/bin/chvt 1
+ExecStart=/usr/bin/python3 /opt/taccomms/screen.py
+Restart=on-failure
+RestartSec=3
+StateDirectory=taccomms-ui
+StateDirectoryMode=0700
+StandardInput=tty
+StandardOutput=tty
+StandardError=journal
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+Environment=TERM=linux
+Environment=PYTHONUNBUFFERED=1
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/taccomms-ui
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+RestrictAddressFamilies=AF_UNIX AF_NETLINK
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

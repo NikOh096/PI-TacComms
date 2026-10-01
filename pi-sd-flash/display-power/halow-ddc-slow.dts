@@ -1,0 +1,9 @@
+/dts-v1/;
+/plugin/;
+/ {
+    compatible = "brcm,bcm2711";
+    fragment@0 {
+        target = <&ddc0>;
+        __overlay__ { clock-frequency = <50000>; };
+    };
+};

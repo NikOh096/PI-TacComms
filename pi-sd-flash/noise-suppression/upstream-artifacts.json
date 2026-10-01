@@ -1,0 +1,37 @@
+{
+  "rnnoise_revision": "70f1d256acd4b34a572f999a05c87bf00b67730d",
+  "artifacts": [
+    {
+      "filename": "mumble_1.5.735.orig.tar.gz",
+      "url": "https://deb.debian.org/debian/pool/main/m/mumble/mumble_1.5.735.orig.tar.gz",
+      "sha256": "db8990079f556a877218d471bcf2c24eb5e4520b652f3c20793d0aadedaae6ae",
+      "size": 26010842
+    },
+    {
+      "filename": "mumble_1.5.735-5+deb13u1.debian.tar.xz",
+      "url": "https://deb.debian.org/debian/pool/main/m/mumble/mumble_1.5.735-5+deb13u1.debian.tar.xz",
+      "sha256": "4f62bb77c7e4c645549aba463f39bfda57eaf303ca70f2c8d5bc08d8585d1bca",
+      "size": 49352
+    },
+    {
+      "filename": "opus-1.5.2.tar.gz",
+      "url": "https://downloads.xiph.org/releases/opus/opus-1.5.2.tar.gz",
+      "sha256": "65c1d2f78b9f2fb20082c38cbe47c951ad5839345876e46941612ee87f9a7ce1",
+      "size": 7839412
+    },
+    {
+      "filename": "rnnoise-modern.tar.gz",
+      "url": "https://codeload.github.com/xiph/rnnoise/tar.gz/70f1d256acd4b34a572f999a05c87bf00b67730d",
+      "sha256": "f61ee0b3f4c4cd337303e003d333357c5eaf25ef5d75a742109ee59e9a0a3932",
+      "size": 93359
+    },
+    {
+      "filename": "rnnoise-modern-model.tar.gz",
+      "url": "https://distfiles.gentoo.org/distfiles/dd/rnnoise_data-0a8755f8e2d834eff6a54714ecc7d75f9932e845df35f8b59bc52a7cfe6e8b37.tar.gz",
+      "sha256": "0a8755f8e2d834eff6a54714ecc7d75f9932e845df35f8b59bc52a7cfe6e8b37",
+      "size": 58603099,
+      "upstream_url": "https://media.xiph.org/rnnoise/models/rnnoise_data-0a8755f8e2d834eff6a54714ecc7d75f9932e845df35f8b59bc52a7cfe6e8b37.tar.gz",
+      "mirror_note": "Gentoo distribution mirror; original Xiph TLS certificate was expired when checked 2026-10-01. Exact upstream SHA-256 remains mandatory."
+    }
+  ]
+}

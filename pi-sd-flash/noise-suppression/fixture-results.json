@@ -1,0 +1,54 @@
+{
+  "synthetic_only": true,
+  "live_headset_validation": false,
+  "outputs": {
+    "clipped-impulses-baseline": {
+      "delay_ms": 6.4375,
+      "stoi": 0.8884568222788668,
+      "estoi": 0.8512894042104597,
+      "peak_dbfs": 0.0,
+      "transient_rms_dbfs": -14.544694841887955,
+      "speech_gain_db": -1.5613633307628279
+    },
+    "impulses-baseline": {
+      "delay_ms": 6.4375,
+      "stoi": 0.9207269390814538,
+      "estoi": 0.8646713349827004,
+      "peak_dbfs": 0.0,
+      "transient_rms_dbfs": -22.107109767334858,
+      "speech_gain_db": -1.6054413263751763
+    },
+    "clean-modern-filtered": {
+      "delay_ms": 32.875,
+      "stoi": 0.975815056781595,
+      "estoi": 0.9419124001265631,
+      "peak_dbfs": -15.924030730235435,
+      "transient_rms_dbfs": -39.45769968255916,
+      "speech_gain_db": -3.4972260998192564
+    },
+    "clipped-impulses-modern-filtered": {
+      "delay_ms": 32.854166666666664,
+      "stoi": 0.9603293196036694,
+      "estoi": 0.9006089557891928,
+      "peak_dbfs": -16.310510644344824,
+      "transient_rms_dbfs": -40.693627255381585,
+      "speech_gain_db": -3.940873501229575
+    },
+    "impulses-modern-filtered": {
+      "delay_ms": 32.854166666666664,
+      "stoi": 0.9629905122180286,
+      "estoi": 0.9043274441477958,
+      "peak_dbfs": -16.62646018693285,
+      "transient_rms_dbfs": -40.28466651014461,
+      "speech_gain_db": -3.977743763270529
+    },
+    "impulses-old-filtered": {
+      "delay_ms": 22.854166666666668,
+      "stoi": 0.9335254265753946,
+      "estoi": 0.869202914075734,
+      "peak_dbfs": -13.249644878617993,
+      "transient_rms_dbfs": -33.599547132099175,
+      "speech_gain_db": -3.954593172791108
+    }
+  }
+}

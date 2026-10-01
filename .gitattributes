@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.dtbo binary
+*.wav binary

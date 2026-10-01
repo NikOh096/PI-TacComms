@@ -1,0 +1,92 @@
+TacComms Pi - updated 2026-09-29
+
+LATEST UPDATE
+The secure touchscreen is installed. TACCOMMS-UPDATE.md has the current status;
+PHONE-CONNECTION-GUIDE.md explains phone/HD01 setup. The historical notes below
+describe original provisioning; the new UI replaces tap-to-cycle status pages.
+Tap the main area to cycle Status / Logs / Processes. The Admin button opens
+PIN-protected controls; Lock asks for confirmation and requires a separate
+recovery PIN to unlock. Both PINs were set
+on the Pi, not taken from chat. Mumble keeps running while controls are locked.
+Approved firewall/service hardening passed fresh USB SSH and TCP/TLS+UDP tests.
+H7608: TC-HTRT01 (10.42.0.1). HD01s: TC-HTHD01 (10.42.0.160) and
+TC-HTHD02 (10.42.0.161), both paired in bridge mode (US channel 25, 1 MHz).
+The requested Wi-Fi/HaLow/admin password is applied to all three Heltec devices.
+Pi remains 10.42.0.137:64738. Pixel login as N1K0 through node 2 is verified.
+Mumble password and touchscreen PINs are unchanged. A two-phone call remains to test.
+
+CURRENT STATE - UPDATED AFTER LIVE REPAIR
+Mumble is installed and enabled. Automatic startup was verified with a reboot.
+Authenticated Mumble login over TLS and a UDP ping passed from the PC over USB.
+Ethernet address observed after reboot: 10.42.0.137 (DHCP).
+No current or historical undervoltage flags were present after the clean reboot
+with the PiSugar switched ON. Before that, PC-only power caused repeated undervoltage.
+Phone-to-phone audio over the HD01/HaLow path still requires a call test.
+
+DISPLAY POWER CONTROL - HARDWARE TEST PASSED
+The OSOYOO HDMI35 V2.0 returned malformed DDC/CI replies at the default 97.5 kHz
+HDMI control clock. Setting HDMI-A-1's control clock to 50 kHz restored communication.
+The user confirmed the backlight went completely off and a stylus tap woke it.
+Linux also recorded the physical touch event while suspended, and the monitor
+reported D6=3 (suspend) followed by D6=1 (on). Mumble remained active during that test.
+The console uses these working DDC settings for its 60-second inactivity timer.
+The installed timer was verified: it automatically reached monitor suspend state
+after 60 seconds, while Mumble's process ID remained unchanged.
+If DDC control ever fails, status stays visible instead of drawing a lit black screen.
+This changes only the HDMI control bus, not display resolution or the GPIO battery bus.
+Boot overlay: /boot/firmware/overlays/halow-ddc-slow.dtbo
+Boot config rollback: /boot/firmware/config.txt.before-halow-ddc-clock-test
+
+PISUGAR S PLUS
+This model cannot report battery percentage or actual charging current/state.
+Auto switch was confirmed ON. GPIO3 is used to display external charger connected
+or disconnected. This does not prove that the battery is actively charging.
+Live Pi undervoltage status is displayed independently.
+The console now labels these as "Battery %: unsupported (S Plus)" and "PiSugar input".
+A real percentage requires an added battery sensor or a reporting battery board.
+
+FIRST BOOT
+1. With the Pi powered off, return the SD card to the Pi.
+2. Connect Ethernet between the Pi and HT-H7608 router.
+3. Leave the OSOYOO screen connected to HDMI and GPIO.
+4. For setup verification, connect the Pi USB-C to this PC using the data cable.
+5. Power on and allow several minutes, including an automatic reboot.
+   Packages are on the card; no internet connection is needed for installation.
+6. Tell Codex when it has booted so the real hardware and network can be tested.
+
+NORMAL USE
+Mumble starts automatically and restarts if its process fails.
+The Pi boots to a large-text console instead of the desktop.
+Display: 640x480 with Terminus Bold 16x32 font.
+Tap to cycle Status / Server log / Processes.
+After 60 seconds without input the monitor suspends and turns its backlight off.
+Tap firmly with the stylus to wake; further taps cycle through the status pages.
+The Pi, Ethernet, GPIO touch controller and Mumble continue running.
+DDC power control is checked once at startup; otherwise timeout is disabled.
+Physical backlight suspend and touch wake were confirmed by the user.
+
+CONNECTING PHONES
+Use the Pi's Ethernet IPv4 address shown on the Status screen.
+Mumble port: 64738 (both TCP and UDP).
+Use a unique nickname and the shared server password from the private credentials file.
+For the radio network, start with push-to-talk and Opus at 24 kbit/s.
+No public registration or router port forwarding has been configured.
+HT-H7608 routing/bridging, HD01 connectivity and a stable server IP still need verification.
+
+MANAGEMENT
+Pi username: niko
+Pi hostname: halow-pi
+USB management address: normally 10.12.194.1
+Dedicated SSH private key: private\halow-pi-ed25519 (keep private).
+Passwords: private\HaLow-Pi-credentials.txt (keep private).
+
+Setup logs on the card: halow-setup\bootstrap.log and halow-setup\provision.log
+Boot report on the card: halow-setup\status.txt
+Original boot configuration backups: backup-2026-09-28
+
+Sources:
+https://osoyoo.com/zh/2026/01/27/3-5/
+https://wiki.heltec.org/docs/devices/wifi-halow/ht-hd01/lan
+https://wiki.heltec.org/docs/devices/wifi-halow/ht-h7608/gateway
+https://www.raspberrypi.com/documentation/computers/configuration.html
+https://www.ddcutil.com/command_setvcp/

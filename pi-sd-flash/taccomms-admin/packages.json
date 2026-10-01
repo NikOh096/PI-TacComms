@@ -1,0 +1,23 @@
+[
+  {
+    "name": "libmcpp0",
+    "version": "2.7.2-5.2",
+    "filename": "libmcpp0_2.7.2-5.2_arm64.deb",
+    "sha256": "dfce5ca60e5aa30f63673f480f562b20872813a69993497cd0cf0d8362ec242e",
+    "depends": "libc6 (>= 2.33)"
+  },
+  {
+    "name": "python3-zeroc-ice",
+    "version": "3.7.10-3.1",
+    "filename": "python3-zeroc-ice_3.7.10-3.1_arm64.deb",
+    "sha256": "86ddd3520a3aa6f28f6eabd354be0a863c12ff8e02f053579c6afc7f96265045",
+    "depends": "libzeroc-ice3.7t64 (= 3.7.10-3.1), python3 (<< 3.14), python3 (>= 3.13~), python3:any, libc6 (>= 2.38), libgcc-s1 (>= 3.0), libmcpp0, libstdc++6 (>= 14)"
+  },
+  {
+    "name": "zeroc-ice-slice",
+    "version": "3.7.10-3.1",
+    "filename": "zeroc-ice-slice_3.7.10-3.1_all.deb",
+    "sha256": "f5df03d254952a0585a2cf7a8efc90dfca4089db06dfb7ca34be61287b084cfe",
+    "depends": ""
+  }
+]

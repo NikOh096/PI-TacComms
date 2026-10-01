@@ -1,0 +1,30 @@
+[Unit]
+Description=TacComms local PIN-protected administration
+After=mumble-server.service
+Wants=mumble-server.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/taccomms/backend.py
+Restart=on-failure
+RestartSec=3
+RuntimeDirectory=taccomms
+RuntimeDirectoryMode=0755
+StateDirectory=taccomms
+StateDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectHome=yes
+ProtectSystem=strict
+ReadWritePaths=/var/lib/taccomms
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

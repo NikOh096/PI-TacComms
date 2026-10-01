@@ -1,0 +1,8 @@
+{
+  "username": "niko",
+  "hostname": "halow-pi",
+  "password_hash": "GENERATE_LOCALLY_FOR_NEW_CARD_ONLY",
+  "mumble_password": "SET_LOCALLY_FOR_NEW_CARD_ONLY",
+  "admin_password": "SET_LOCALLY_FOR_NEW_CARD_ONLY",
+  "ssh_public_key": "INSERT_PUBLIC_KEY_FOR_NEW_CARD_ONLY"
+}

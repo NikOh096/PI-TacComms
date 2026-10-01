@@ -1,0 +1,7 @@
+{
+  "password": "TRANSFER_PRIVATELY_FROM_EXISTING_INSTALLATION",
+  "nodes": {
+    "HT-HD01-BFD0": "TC-HTHD01",
+    "HT-HD01-A04E": "TC-HTHD02"
+  }
+}

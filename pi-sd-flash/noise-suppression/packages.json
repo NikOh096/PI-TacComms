@@ -1,0 +1,170 @@
+[
+  {
+    "url": "https://archive.raspberrypi.com/debian/pool/main/o/openssl/libssl-dev_3.5.7-1%7edeb13u2%2brpt1_arm64.deb",
+    "filename": "libssl-dev_3.5.7-1~deb13u2+rpt1_arm64.deb",
+    "size": 4822750,
+    "sha256": "f6c0a152c18b5786b3da6c05375555909dcf2b88949caf4dea37ca2f5f391b77"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/c/cmake/cmake-data_3.31.6-2_all.deb",
+    "filename": "cmake-data_3.31.6-2_all.deb",
+    "size": 2268208,
+    "sha256": "d9060145be892f43cd1888024114ceab019c81479d4b0a3383fe14cebe2295cb"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/libj/libjsoncpp/libjsoncpp26_1.9.6-3_arm64.deb",
+    "filename": "libjsoncpp26_1.9.6-3_arm64.deb",
+    "size": 72912,
+    "sha256": "346da1614a66ae07549243f2abf1dc5fdcc590a4ccb408458b5ea7ef7997477d"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/r/rhash/librhash1_1.4.5-1_arm64.deb",
+    "filename": "librhash1_1.4.5-1_arm64.deb",
+    "size": 128888,
+    "sha256": "3bee5b995ee3219779d0f50b2622b0fbc05bb89c69fa833c83d685a3c88aa73d"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/c/cmake/cmake_3.31.6-2_arm64.deb",
+    "filename": "cmake_3.31.6-2_arm64.deb",
+    "size": 9905888,
+    "sha256": "983aa00debd072f7bfae69f93b1b9e4628da0a914c3745b9022e4cd60215493b"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/a/avahi/libavahi-common-dev_0.8-16_arm64.deb",
+    "filename": "libavahi-common-dev_0.8-16_arm64.deb",
+    "size": 60048,
+    "sha256": "99734b91e56a549967ae90380da77dab39201cedef6a20f82dfdbd9dbda5d07f"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/libc/libcap2/libcap-dev_2.75-10%2bdeb13u1%2bb3_arm64.deb",
+    "filename": "libcap-dev_1%3a2.75-10+deb13u1+b3_arm64.deb",
+    "size": 470732,
+    "sha256": "e3184756963ee724e0f1f06a9be05e9a5e5caf7e2255b61a224ccc9ecec19af8"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/s/systemd/libsystemd-dev_257.13-1%7edeb13u1_arm64.deb",
+    "filename": "libsystemd-dev_257.13-1~deb13u1_arm64.deb",
+    "size": 1372824,
+    "sha256": "06239173236c0cfee4ee4310ddeb428b094d3b4e34a80b173587da277d9a1199"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/d/dbus/libdbus-1-dev_1.16.2-2_arm64.deb",
+    "filename": "libdbus-1-dev_1.16.2-2_arm64.deb",
+    "size": 215912,
+    "sha256": "305788b468ae2daba9074e59906a26df34d3f6f347d3191f13043f5a9224f90b"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/a/avahi/libavahi-client-dev_0.8-16_arm64.deb",
+    "filename": "libavahi-client-dev_0.8-16_arm64.deb",
+    "size": 57516,
+    "sha256": "e4b342ccfd017b2f4c489b2508969039c303a5e3f30a46785e58dca2ec312bb1"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/a/avahi/libavahi-compat-libdnssd-dev_0.8-16_arm64.deb",
+    "filename": "libavahi-compat-libdnssd-dev_0.8-16_arm64.deb",
+    "size": 54052,
+    "sha256": "4d2f246c499238922befdd6a786db5d048b39d9be5c027f63f276550e5b1cf14"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/b/boost1.83/libboost1.83-dev_1.83.0-4.2_arm64.deb",
+    "filename": "libboost1.83-dev_1.83.0-4.2_arm64.deb",
+    "size": 10588964,
+    "sha256": "0f82bfbd6d1afae0d03da64e4e2ac531effcf66e89e962a4fb6bebf0ec35db6e"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/b/boost-defaults/libboost-dev_1.83.0.2%2bb2_arm64.deb",
+    "filename": "libboost-dev_1.83.0.2+b2_arm64.deb",
+    "size": 3828,
+    "sha256": "346e0dc8fe3c50fe3b8794d964536ef37bcd6ae7b166081f2b6b509240e2284d"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/libg/libglvnd/libegl-dev_1.7.0-1%2bb2_arm64.deb",
+    "filename": "libegl-dev_1.7.0-1+b2_arm64.deb",
+    "size": 19516,
+    "sha256": "888639a18354093c289ed1de95e75f927fb6979a3433b733eb2e9d9a8347b02e"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/o/opus/libopus-dev_1.5.2-2_arm64.deb",
+    "filename": "libopus-dev_1.5.2-2_arm64.deb",
+    "size": 2876120,
+    "sha256": "544425aae285926bf1649a1eb854efa63dea573d098f3781fae39cb3b3e7fd7e"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/p/protobuf/libprotobuf-dev_3.21.12-11%2bdeb13u1_arm64.deb",
+    "filename": "libprotobuf-dev_3.21.12-11+deb13u1_arm64.deb",
+    "size": 1260712,
+    "sha256": "26e311a867ef831d2378a33e772b1f21924261eedcefe08f7ce852c6176c2836"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/p/protobuf/libprotoc32t64_3.21.12-11%2bdeb13u1_arm64.deb",
+    "filename": "libprotoc32t64_3.21.12-11+deb13u1_arm64.deb",
+    "size": 790464,
+    "sha256": "0cf431ed1f7d48d6acd52e1532bc3f7c17048a737115dc9eb900edfa7a08ed7a"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/q/qtbase-opensource-src/libqt5concurrent5t64_5.15.15%2bdfsg-6%2bdeb13u1_arm64.deb",
+    "filename": "libqt5concurrent5t64_5.15.15+dfsg-6+deb13u1_arm64.deb",
+    "size": 45244,
+    "sha256": "e7317d2ef80c32ba38a3847bbdcab0fad317c76349e3cbb2846f9cbaeeeee39b"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/v/vulkan-loader/libvulkan-dev_1.4.309.0-1_arm64.deb",
+    "filename": "libvulkan-dev_1.4.309.0-1_arm64.deb",
+    "size": 1556352,
+    "sha256": "3244f0422d3c5cf14f5d13bc48a0cae7786d94ea0ceff22414c094388666e70d"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/z/zeroc-ice/zeroc-ice-compilers_3.7.10-3.1_arm64.deb",
+    "filename": "zeroc-ice-compilers_3.7.10-3.1_arm64.deb",
+    "size": 2067080,
+    "sha256": "b4d4da525959321920bc8864f875d4d3b2fa7afdf78a2d659731647d35ea275c"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/z/zeroc-ice/libzeroc-ice-dev_3.7.10-3.1_arm64.deb",
+    "filename": "libzeroc-ice-dev_3.7.10-3.1_arm64.deb",
+    "size": 4126956,
+    "sha256": "d0da77d14e3d8dedaebab3ce7d4ecd9ffae3e23988c3dd62281f1dc89df09455"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/n/nlohmann-json3/nlohmann-json3-dev_3.11.3-2.1_all.deb",
+    "filename": "nlohmann-json3-dev_3.11.3-2.1_all.deb",
+    "size": 261656,
+    "sha256": "741a6a32f61a14eaf9560ba1814b27da8e78fa3b9bed9e8867ab46316ddf3793"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/p/protobuf/protobuf-compiler_3.21.12-11%2bdeb13u1_arm64.deb",
+    "filename": "protobuf-compiler_3.21.12-11+deb13u1_arm64.deb",
+    "size": 85040,
+    "sha256": "a873f75cbdf8054a23687e7c9b39ca1a93545edd22a581f4caa560756678f658"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/q/qtbase-opensource-src/qt5-qmake-bin_5.15.15%2bdfsg-6%2bdeb13u1_arm64.deb",
+    "filename": "qt5-qmake-bin_5.15.15+dfsg-6+deb13u1_arm64.deb",
+    "size": 923192,
+    "sha256": "09ec531314448420c5256979bdd8cb470f2095af8106e8d5e71971f930d7bdcc"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/q/qtchooser/qtchooser_66-2%2bb1_arm64.deb",
+    "filename": "qtchooser_66-2+b1_arm64.deb",
+    "size": 24536,
+    "sha256": "3fbd3313608c7f997794be032475d87f6c3c1feb3e6a3e18885bce5e314945f2"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/q/qtbase-opensource-src/qt5-qmake_5.15.15%2bdfsg-6%2bdeb13u1_arm64.deb",
+    "filename": "qt5-qmake_5.15.15+dfsg-6+deb13u1_arm64.deb",
+    "size": 224184,
+    "sha256": "028c1c19a34ebab8aa0f192ef3c2f314cf137b57c689247924dcc30827d1202a"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/q/qtbase-opensource-src/qtbase5-dev-tools_5.15.15%2bdfsg-6%2bdeb13u1_arm64.deb",
+    "filename": "qtbase5-dev-tools_5.15.15+dfsg-6+deb13u1_arm64.deb",
+    "size": 720240,
+    "sha256": "9c5eb06c61f70e21c322eb9a86e0f90e9d8c52771a46b7719c798c0b60467126"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/q/qtbase-opensource-src/qtbase5-dev_5.15.15%2bdfsg-6%2bdeb13u1_arm64.deb",
+    "filename": "qtbase5-dev_5.15.15+dfsg-6+deb13u1_arm64.deb",
+    "size": 1121716,
+    "sha256": "8946dce58269087fe6dc2d8d19c563765e5a36ce4b77c59b0883e0480d45f5c7"
+  }
+]

@@ -1,0 +1,27 @@
+[Unit]
+Description=TacComms persistent power and crash diagnostics
+After=systemd-journald.service mumble-server.service taccomms-screen.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/lib/taccomms-diagnostics/monitor.py --monitor
+Restart=on-failure
+RestartSec=10
+StateDirectory=taccomms-diagnostics
+StateDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectHome=yes
+ProtectSystem=strict
+ReadWritePaths=/var/lib/taccomms-diagnostics
+RestrictAddressFamilies=AF_UNIX
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+MemoryMax=64M
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

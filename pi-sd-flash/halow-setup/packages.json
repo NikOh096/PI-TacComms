@@ -1,0 +1,92 @@
+[
+  {
+    "name": "ddcutil",
+    "version": "2.2.0-2",
+    "filename": "ddcutil_2.2.0-2_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/d/ddcutil/ddcutil_2.2.0-2_arm64.deb",
+    "sha256": "c74458c58a16ae1f4e7aaeddafea51da56e8ae9214e0d8687154e7c993664a56",
+    "size": 434468,
+    "was_installed": false
+  },
+  {
+    "name": "evtest",
+    "version": "1:1.35-1+b1",
+    "filename": "evtest_1.35-1+b1_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/e/evtest/evtest_1.35-1+b1_arm64.deb",
+    "sha256": "7fee662f317a35b27325b7beaf7c3e82ddabf508b5ab49e39ee83a34343338c4",
+    "size": 15688,
+    "was_installed": false
+  },
+  {
+    "name": "libavahi-compat-libdnssd1",
+    "version": "0.8-16",
+    "filename": "libavahi-compat-libdnssd1_0.8-16_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/a/avahi/libavahi-compat-libdnssd1_0.8-16_arm64.deb",
+    "sha256": "b64710e34b7cf30d7d446e6bbceed20e8c2b24d387f2cbd21af17947d087ba17",
+    "size": 37860,
+    "was_installed": false
+  },
+  {
+    "name": "libpocofoundation100",
+    "version": "1.13.0-6+deb13u1",
+    "filename": "libpocofoundation100_1.13.0-6+deb13u1_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/p/poco/libpocofoundation100_1.13.0-6+deb13u1_arm64.deb",
+    "sha256": "89097c367fa965a6d2aa094c136cb0672585051239c4794302c2a4d692983ab6",
+    "size": 560784,
+    "was_installed": false
+  },
+  {
+    "name": "libpocoxml100",
+    "version": "1.13.0-6+deb13u1",
+    "filename": "libpocoxml100_1.13.0-6+deb13u1_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/p/poco/libpocoxml100_1.13.0-6+deb13u1_arm64.deb",
+    "sha256": "9cb6f6ebafde3d51cb2336c7e96c2d015d0f0f03f898be56e5fd1ce1ecce2921",
+    "size": 203356,
+    "was_installed": false
+  },
+  {
+    "name": "libpocozip100",
+    "version": "1.13.0-6+deb13u1",
+    "filename": "libpocozip100_1.13.0-6+deb13u1_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/p/poco/libpocozip100_1.13.0-6+deb13u1_arm64.deb",
+    "sha256": "60d021e92084bce3a81d5cf90988ad85b2cebaf5b3761339143da7fc1342ab1e",
+    "size": 154172,
+    "was_installed": false
+  },
+  {
+    "name": "libspeechd2",
+    "version": "0.12.0-5",
+    "filename": "libspeechd2_0.12.0-5_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/s/speech-dispatcher/libspeechd2_0.12.0-5_arm64.deb",
+    "sha256": "99f2b6abb44c6597ea7e0bf0195cddacc5ed87828939f83191facc8139ff8d33",
+    "size": 21760,
+    "was_installed": false
+  },
+  {
+    "name": "libzeroc-ice3.7t64",
+    "version": "3.7.10-3.1",
+    "filename": "libzeroc-ice3.7t64_3.7.10-3.1_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/z/zeroc-ice/libzeroc-ice3.7t64_3.7.10-3.1_arm64.deb",
+    "sha256": "68bcd715e9db21e535e60199ac007bc83c09b82fa37c7e396ebceaa2037114a1",
+    "size": 2461348,
+    "was_installed": false
+  },
+  {
+    "name": "mumble",
+    "version": "1.5.735-5+deb13u1",
+    "filename": "mumble_1.5.735-5+deb13u1_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/m/mumble/mumble_1.5.735-5+deb13u1_arm64.deb",
+    "sha256": "1861235ab6b1ae06f10b0a15f022341325449a51a77f999979503b65feb8aa9d",
+    "size": 4963844,
+    "was_installed": false
+  },
+  {
+    "name": "mumble-server",
+    "version": "1.5.735-5+deb13u1",
+    "filename": "mumble-server_1.5.735-5+deb13u1_arm64.deb",
+    "url": "https://deb.debian.org/debian/pool/main/m/mumble/mumble-server_1.5.735-5+deb13u1_arm64.deb",
+    "sha256": "f0aea7c9f6a82d9dda7e6bc91f213374d2248ca16caddf766d678b85d899b305",
+    "size": 578848,
+    "was_installed": false
+  }
+]

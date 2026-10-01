@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "project": "TacComms",
+  "repository": "https://github.com/NikOh096/PI-TacComms",
+  "prepared_date": "2026-10-01",
+  "timezone": "America/New_York",
+  "purpose": "Continue development and management on another machine without losing working configuration or mistaking prototypes for deployed features.",
+  "read_first": [
+    "README.md",
+    "AGENTS.md",
+    "docs/NEW-MACHINE.md",
+    "docs/CURRENT-STATE.md",
+    "pi-sd-flash/noise-suppression/RESUME.md"
+  ],
+  "evidence": {
+    "last_detailed_device_checks": "2026-09-29",
+    "latest_user_report": "Everything works.",
+    "upload_day_usb_ssh_check": "10.12.194.1:22 timed out; no current live snapshot obtained.",
+    "repository_is": "Source and handoff, not an SD-card image or complete private-state backup."
+  },
+  "user_preferences": [
+    "Dedicated local-only voice system; automatic Mumble startup without PC or internet.",
+    "Keep phone mobile data ENABLED. It was restored and cellular data confirmed active after the user urgently requested restoration.",
+    "Do not disable mobile data to troubleshoot HaLow or route Mumble traffic.",
+    "Use tap-to-cycle Status/Logs/Processes with cyan TacComms header and visible Admin/Lock buttons.",
+    "Admin requires six-digit PIN; emergency lock requires confirmation and a separate six-digit recovery PIN; calls continue while locked.",
+    "PINs enrolled on the Pi; never reuse a PIN typed in old conversation history.",
+    "60-second display sleep must switch the backlight off and preserve stylus-tap wake.",
+    "Central filtering on Pi is desired, prioritizing voice intelligibility during loud impulses.",
+    "User will supply proper hearing-protection equipment; headset model remains unfinalized.",
+    "No full-disk encryption selected; preserve unattended boot."
+  ],
+  "hardware": {
+    "pi": "Raspberry Pi 4 Model B",
+    "os": "Raspberry Pi OS 64-bit Trixie; configured image dated 2026-09-15",
+    "screen": "OSOYOO HDMI 3.5-inch LCD 480x320 V2.0, ADS7846 resistive touch; 640x480 framebuffer used",
+    "battery": "PiSugar S Plus; no built-in supported percentage telemetry; battery connector repaired by owner",
+    "gateway": "Heltec HT-H7608 V2.0",
+    "nodes": [
+      "Heltec HT-HD01 V2",
+      "Heltec HT-HD01 V2"
+    ],
+    "phone_client": "Android / Mumla; tested phone Pixel 10 Pro"
+  },
+  "network": {
+    "path": [
+      "Bluetooth headset",
+      "Android Mumla",
+      "HD01 2.4 GHz Wi-Fi",
+      "HaLow",
+      "H7608",
+      "Ethernet",
+      "Pi"
+    ],
+    "local_only": true,
+    "region": "US",
+    "halow_channel": 25,
+    "halow_frequency_mhz": 914.5,
+    "halow_width_mhz": 1,
+    "gateway": {
+      "hostname": "TC-HTRT01",
+      "ip": "10.42.0.1"
+    },
+    "nodes": [
+      {
+        "ssid": "TC-HTHD01",
+        "ip": "10.42.0.160",
+        "original_ssid": "HT-HD01-BFD0"
+      },
+      {
+        "ssid": "TC-HTHD02",
+        "ip": "10.42.0.161",
+        "original_ssid": "HT-HD01-A04E"
+      }
+    ],
+    "pi": {
+      "hostname": "halow-pi",
+      "ethernet_ip": "10.42.0.137",
+      "usb_management_ip": "10.12.194.1",
+      "ssh_user": "niko"
+    },
+    "node_mode": "HaLow station/client bridges; node DHCP disabled; H7608 assigns addresses",
+    "mumble_port": 64738,
+    "mumble_transports": [
+      "TCP",
+      "UDP"
+    ],
+    "ice_endpoint": "127.0.0.1:6502",
+    "secrets": "Existing Heltec credentials and separate Mumble password are deliberately omitted; transfer private state securely.",
+    "phone_settings": {
+      "transmit": "push-to-talk",
+      "bitrate_bps": 24000,
+      "auto_reconnect": true,
+      "only_tcp": false,
+      "tor": false,
+      "mobile_data": true,
+      "wifi_no_internet": "Stay connected"
+    },
+    "certificate_sha256": "eb:c5:6e:a5:f4:b1:0b:07:bf:22:c1:f7:b1:da:35:cd:ef:d2:bd:4b:42:2e:3e:7a:25:6b:7b:2b:97:ca:bb:a1"
+  },
+  "last_verified_deployed": [
+    "Original Debian Mumble 1.5.735-5+deb13u1 with automatic startup.",
+    "PIN-protected touchscreen/backend, separate persistent emergency lock, admin command allowlist.",
+    "USB-only key-based SSH management, local voice firewall, loopback-only authenticated Ice.",
+    "Unused printing/RPC/NFS/remote desktop and alternate virtual-console login disabled.",
+    "50 kHz HDMI DDC overlay; D6=3 suspend and D6=1 wake. User confirmed backlight off and stylus wake.",
+    "Persistent bounded journal and diagnostics monitor, health/crashlog commands.",
+    "Screen startup waits up to 30 seconds for admin state without replaying admin commands.",
+    "Both HD01s paired; phone authenticated through node 2, reached matching Pi certificate through node 1."
+  ],
+  "code_state": {
+    "admin_directory": "pi-sd-flash/taccomms-admin",
+    "warning": "Local backend.py includes uninstalled noise controls. Do not blindly replace /opt/taccomms with this working tree.",
+    "noise_deployed": false,
+    "battery_gauge_installed": false,
+    "historical_documents": "Dated notes retain prior observations; docs/CURRENT-STATE.md and this handoff resolve known contradictions."
+  },
+  "live_paths": {
+    "ui_code": "/opt/taccomms",
+    "private_state": "/var/lib/taccomms",
+    "touch_calibration": "/var/lib/taccomms-ui/touch.json",
+    "diagnostics": "/var/lib/taccomms-diagnostics",
+    "journal": "/var/log/journal",
+    "mumble_config": "/etc/mumble/mumble-server.ini",
+    "mumble_database": "/var/lib/mumble-server/mumble-server.sqlite",
+    "services": [
+      "mumble-server",
+      "taccomms-admin",
+      "taccomms-screen",
+      "taccomms-firewall",
+      "taccomms-diagnostics"
+    ],
+    "noise_build": "/home/niko/taccomms-noise-build",
+    "noise_install_marker": "/usr/local/lib/taccomms-noise/build-info.json"
+  },
+  "private_transfer": {
+    "required_local_files": [
+      "pi-sd-flash/private/credentials.json",
+      "pi-sd-flash/private/halow-pi-ed25519",
+      "pi-sd-flash/private/known_hosts",
+      "pi-sd-flash/private/tc-network.json"
+    ],
+    "optional_recovery": "Transfer the original private folder and device backups using an encrypted channel; never commit them.",
+    "host_identity": "Retain pinned known_hosts; independently verify a replacement key instead of disabling strict checking.",
+    "do_not_regenerate": "Generating fresh credentials does not grant access to the existing Pi and may overwrite useful local setup state."
+  },
+  "diagnostics_findings": {
+    "date": "2026-09-29",
+    "report": "pi-sd-flash/CRASH-REPORT-2026-09-29.md",
+    "confirmed": "Two current-boot undervoltage episodes, 214 and 204 seconds; 0x50000 historical flags; another earlier 210-second event.",
+    "services": "Mumble/Admin/Screen zero restarts in inspected two-hour boot.",
+    "not_found": "No matching panic, OOM, watchdog, MMC or EXT4 error in reviewed logs.",
+    "uncertain": "Specific power-path component and cause of each USB loss. USB loss alone does not establish a Pi crash.",
+    "retention": "30-second samples; journal target 128 MiB/14 days; two ~2 MiB health logs; 10 reports."
+  },
+  "noise_filter": {
+    "status": "Prototype, not deployed",
+    "mumble_version": "1.5.735-5+deb13u1",
+    "rnnoise_revision": "70f1d256acd4b34a572f999a05c87bf00b67730d",
+    "model_sha256": "0a8755f8e2d834eff6a54714ecc7d75f9932e845df35f8b59bc52a7cfe6e8b37",
+    "design": "Per-user Opus decode, RNNoise and peak limiter, Opus re-encode in shared UDP/TCP forwarding path after server access/routing decisions.",
+    "supported": "Mono Opus 10/20/40/60 ms; output 24 kbps; unsupported codecs/stereo/durations pass through.",
+    "tests_completed_on_windows": [
+      "core/reset/malformed-packet/per-user isolation",
+      "20-second four-active-speaker load: mean 2.32 ms per 20 ms packet, no neural fallback",
+      "synthetic impulse STOI comparisons; not live headset/range validation"
+    ],
+    "pi_build_status": "Interrupted at step 23/42 while compiling ServerUser.cpp; modern generated model compiled; one build worker.",
+    "must_sync": "Latest TacCommsDenoiser.cpp Drop handling for non-finite output / encode failure predates last unfinished Pi sync.",
+    "remaining": [
+      "Stabilize power and inspect fresh diagnostics",
+      "Regenerate verified source bundle and sync current source",
+      "Resume isolated single-worker build as niko",
+      "Run core/load and isolated encrypted UDP/TCP integration checks",
+      "Review untested installer and rollback; deploy only with passed receipts and zero connected users",
+      "Verify production service/transport/security and real headset audio"
+    ],
+    "entry_points": [
+      "pi-sd-flash/noise-suppression/RESUME.md",
+      "pi-sd-flash/noise-suppression/fetch-upstream.py",
+      "pi-sd-flash/noise-suppression/build.py",
+      "pi-sd-flash/noise-suppression/run-pi-tests.py",
+      "pi-sd-flash/noise-suppression/install-filter.py"
+    ]
+  },
+  "next_machine_first_steps": [
+    "Read README, AGENTS, CURRENT-STATE and NEW-MACHINE. Do not run deployment/recovery scripts merely by cloning.",
+    "Securely transfer private credentials and host pin; install Python 3.12+ and OpenSSH.",
+    "Connect Pi USB-C directly with a working data cable; preserve stable power and Ethernet to gateway.",
+    "Read-only inspect boot ID, uptime, power flags, service status and current installed files before changing anything.",
+    "Leave phone mobile data enabled. If using ADB, choose the actual phone via ANDROID_SERIAL.",
+    "Check developer stay-awake setting; old temporary value 15 had original 0 and restoration was not confirmed. Obtain current owner preference before replacing a newer setting.",
+    "Preserve working voice/UI and private PIN state. Continue noise work only after reviewing current power/service state."
+  ],
+  "validation_this_export": {
+    "status": "passed local checks; no live hardware verification",
+    "report": "docs/EXPORT-VALIDATION.json",
+    "tests_passed": 15,
+    "noise_filter_deployed": false
+  }
+}
